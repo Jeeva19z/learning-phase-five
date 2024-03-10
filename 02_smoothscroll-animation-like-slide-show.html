@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang = "en">
+<head>
+<meta charset = "utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>        <!-- for browser fasr load use it  -->
+<title  > This is an example for jQuery scroll animation working </title>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+
+    <a href="#top" class="clickin" style="float: right;padding: 10px 15px;background-color: lightgreen;border: none;margin-right: 20px;cursor: pointer;margin-top: 20px;text-decoration: none; color: black;">Click</a>    
+    
+
+<h2 style="text-align: center;background-color:rgb(75, 236, 99);padding: 20px;">sroll animation</h2>
+
+    
+<div class="clr" style="background-color: lightcoral;">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sit recusandae quod fuga deleniti consequuntur quas dolor labore saepe neque nemo libero explicabo accusamus iste dolore molestiae accusantium, nisi sunt ex reiciendis?</p>
+
+    <p style="margin-top: 1500px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sit recusandae quod fuga deleniti consequuntur quas dolor labore saepe neque nemo libero explicabo accusamus iste dolore molestiae accusantium, nisi sunt ex reiciendis?</p>
+
+</div>
+
+<div class="footer" style="background-color: lightslategray;display:flex;width: 100%;padding-bottom: 40px;justify-content: space-between;align-items: center;">
+
+    <p style="margin-left:20px;">copyright 2023</p>
+    
+    
+</div>
+
+<script>
+$(document).ready(function(){
+
+
+$(".clickin").ready(function(){
+    
+
+    $("html").animate({scrollTop:$("#top").offset().top},1000); //what is offset : offset method() allows to retrive the current position of the element offset - ஒன்றனுடைய தாக்க விளைவின் கடுமையைக் குறை scrolltop also top goes down. bidirection or both.
+
+});
+
+});
+
+
+
+
+
+</script>
+<span id="top"></span>
+</body>
+</document>
+

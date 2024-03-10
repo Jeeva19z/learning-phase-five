@@ -1,0 +1,11 @@
+p:nth-child(1){
+    color: blue;
+}
+.open{
+    margin: 5px;
+    background-color:green;
+    padding: 10px;
+}
+#pink{
+    color: blue;
+}
